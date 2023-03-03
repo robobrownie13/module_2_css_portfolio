@@ -1,0 +1,54 @@
+html {
+    line-height: 1.15;
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #fff;
+    padding: 20px;
+}
+
+
+
+.container {
+    background-color: pink;
+    height: 90vw;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+nav {
+    width: 80vw;
+    position: absolute;
+    display: flex;
+    background-color: skyblue;
+    justify-content: space-between;
+}
+
+h1 {
+    margin-left: 2rem;
+}
+
+nav ul {
+    justify-content: space-between;
+}
+
+nav ul li {
+    text-align: center;
+    text-decoration: none;
+}
+
+#Work {
+    padding-left: 20vw;
+}
+
+.card {
+    display: flex;
+    flex-wrap: row wrap;
+    flex: 1 0 50%;
+    height: 80px;
+    width: 100px;
+    border: 4px solid #fff;
+}
