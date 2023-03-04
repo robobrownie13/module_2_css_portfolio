@@ -5,10 +5,11 @@ html {
 
 body {
     background-color: #fff;
-    padding: 20px;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
-
-
 
 .container {
     background-color: pink;
@@ -19,36 +20,103 @@ body {
     align-content: center;
 }
 
-nav {
+header {
     width: 80vw;
     position: absolute;
     display: flex;
     background-color: skyblue;
     justify-content: space-between;
+    padding: 10px 0px 10px 0;
 }
 
 h1 {
-    margin-left: 2rem;
+    margin-left: 3rem;
+    align-self: center;
 }
-
+nav {
+    width: 25rem;
+    white-space: none;
+}
 nav ul {
-    justify-content: space-between;
+    list-style-type: none;
+    overflow: hidden;
+    justify-content: space-around;
+    align-content: center;
 }
 
 nav ul li {
+    float: left;
+    padding: .5rem 2.5rem .5rem 2.5rem;
     text-align: center;
+    align-items: center;
+}
+
+nav ul a {
+    display: block;
     text-decoration: none;
 }
 
+#About {
+    padding: 7.5rem 4rem 4rem 4rem;
+    position: relative;
+}
+
+
+.header {
+    text-align: center;
+    padding: 1rem;
+}
+
 #Work {
-    padding-left: 20vw;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+section a:first-child {
+    height: 16rem;
+    width: 20rem;
+    border: .5rem solid blue;
+}
+
+section a:nth-child(4) {
+    height: 16rem;
+    width: 20rem;
+    border: .5rem solid purple;
 }
 
 .card {
+    height: 8rem;
+    width: 10rem;
+    border: .5rem solid #fff;
+}
+
+.card:hover{
+
+}
+
+
+footer {
+    width: 80vw;
+    position: relative;
     display: flex;
-    flex-wrap: row wrap;
-    flex: 1 0 50%;
-    height: 80px;
-    width: 100px;
-    border: 4px solid #fff;
+    background-color: skyblue;
+    justify-content: center;
+    padding: 1rem 0 1rem 0;
+}
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+footer li {
+    flex-flow: row wrap;
+    margin: 1rem;
+    padding: .5rem 0 .5rem .5rem;
+    text-align: center;
+    
 }
