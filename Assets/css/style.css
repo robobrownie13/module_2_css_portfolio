@@ -58,8 +58,8 @@ nav ul {
 
 nav ul li {
     font-size: 1.5rem;
-    float: left;
     padding: 0 1.5rem;
+    float: left;
     text-align: center;
     align-items: right;
     cursor: pointer;
@@ -224,6 +224,9 @@ footer li {
     }
     header {
         width: 100vw
+    }
+    nav ul li {
+        clear: left;
     }
     #about-container {
         padding-top: 20rem;
