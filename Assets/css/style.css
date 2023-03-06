@@ -65,7 +65,7 @@ nav ul li {
     cursor: pointer;
 }
 
-nav ul a {
+ul a {
     display: block;
     text-decoration: none;
     --s: 0.1em;   /* the thickness of the line */
@@ -80,7 +80,7 @@ nav ul a {
     transition: 0.5s;
 }
 
-nav a:hover{
+a:hover{
     --_p: 100%
 }
 
@@ -139,9 +139,25 @@ p {
     display: block;
     transition-duration: 1s;
 }
+.project:nth-child(2) > .card {
+    background-image: url(../images/tribute-page-Appa-Screenshot.png);
+    background-position: center;
+}
+.project:nth-child(3) > .card {
+    background-image: url(../images/prework-study-guide-Screenshot.png);
+    background-position: center;
+}
+.project:nth-child(4) > .card{
+    background-image: url(../images/mini-project-22-Recreate-screenshot.png);
+}
+
+.project:nth-child(5) > .card{
+    background-image: url(../images/01-html-css-git-homework-demo.png);
+}
 
 .main-card {
 width: 50vw;
+background-image: url(../images/technical-page-Song-Screenshot.png);
 }
 
 .project {
