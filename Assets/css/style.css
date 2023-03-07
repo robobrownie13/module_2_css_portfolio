@@ -1,10 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 :root {
-    --color-primary: hsl(310, 100%, 65%);
-    --color-secondary: hsl(232, 84%, 53%);
-    --background: hsl(230, 30%, 15%);
+    --pink: hsl(310, 100%, 65%);
+    --blue: hsl(232, 84%, 53%);
+    --background: hsl(228, 42%, 95%);
     --text: hsl(310, 100%, 95%);
+    --true-white: #fcfcff;
+    --true-black: #050203;
+    --purple: #330072;
+    --teal: #008080;
   }
   
 html {
@@ -12,18 +16,18 @@ html {
 }
 
 body {
-    background-color: #fcfcff;
+    background-color: var(--true-black);
     padding: 2rem;
     display: flex;
     justify-content: center;
     align-content: center;
-    color: #fcfcff;
+    color: var(--true-white);
     font-family: 'Poppins', sans-serif;
     line-height: 2;
 }
 
 .container {
-    background-color: #050203;
+    background-color: var(--true-black);
     width: 60vw;
     display: flex;
     justify-content: center;
@@ -35,7 +39,7 @@ header {
     position: absolute;
     display: flex;
     flex-wrap: none;
-    background: #050203;
+    background: var(--true-black);
     justify-content: space-between;
     padding: 10px 0px;
     z-index: 10;
@@ -68,15 +72,15 @@ nav ul li {
 ul a {
     display: block;
     text-decoration: none;
-    --s: 0.1em;   /* the thickness of the line */
-    --c: #2c4bff; /* the color */
-    color: #008080;
+    --s: 0.1em;   
+    --c: var(--blue); 
+    color: var(--teal);
     padding-bottom: var(--s);
     background: 
-          linear-gradient(90deg,var(--c) 50%,#000 0) calc(100% - var(--_p,0%))/200% 100%,
-          linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
-    -webkit-background-clip: text,padding-box;
-    background-clip: text,padding-box;
+    linear-gradient(90deg,var(--c) 50%, var(--true-white) 0) calc(100% - var(--_p,0%))/200% 100%,
+    linear-gradient(var(--c) 0 0) 0% 100%/var(--_p,0%) var(--s) no-repeat;
+-webkit-background-clip: text,padding-box;
+background-clip: text,padding-box;
     transition: 0.5s;
 }
 
@@ -96,23 +100,24 @@ a:hover{
     height:20rem;
     width: 20rem;
     position: relative;
-    border: .5rem solid #008080;
+    border: .5rem solid var(--teal);
     border-radius: 50%;
     align-self: center;
 }
 
 .about {
     padding-top: 5rem;
-    width: 20rem;
+    width: 30rem;
 }
 
 p {
+    font-size: 1.5rem;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-image: linear-gradient(
       35deg,
-      var(--color-primary),
-      var(--color-secondary));
+      var(--pink),
+      var(--blue));
 }
 
 .header {
@@ -134,30 +139,26 @@ p {
     height: 18rem;
     width: 24rem;
     margin: 1rem;
-    background-image: url(https://media.geeksforgeeks.org/wp-content/cdn-uploads/20201217204228/web.png);
+    background-image: url(../images/technical-page-Song-Screenshot.png);
     background-size: cover;
     display: block;
     transition-duration: 1s;
 }
-.project:nth-child(2) > .card {
+.project:nth-child(3) > .card {
     background-image: url(../images/tribute-page-Appa-Screenshot.png);
     background-position: center;
 }
-.project:nth-child(3) > .card {
+.project:nth-child(4) > .card {
     background-image: url(../images/prework-study-guide-Screenshot.png);
     background-position: center;
 }
-.project:nth-child(4) > .card{
-    background-image: url(../images/mini-project-22-Recreate-screenshot.png);
-}
-
 .project:nth-child(5) > .card{
-    background-image: url(../images/01-html-css-git-homework-demo.png);
+    background-image: url(../images/mini-project-22-Recreate-screenshot.png);
 }
 
 .main-card {
     width: 50vw;
-    background-image: url(../images/technical-page-Song-Screenshot.png);
+    background-image: url(../images/01-html-css-git-homework-demo.png);
 }
 
 .project {
@@ -174,7 +175,7 @@ p {
     width: 100%;
     opacity: 0;
     transition: .75s ease;
-    background-color: #330072;
+    background-color: var(--purple);
   }
   
   .card:hover .overlay {
@@ -182,8 +183,8 @@ p {
   }
   
   .description {
-    color: white;
-    font-size: 2rem;
+    color: var(--true-white);
+    font-size: 1.5rem;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -212,10 +213,10 @@ footer li {
     margin: 1rem;
     padding: .5rem 0 .5rem .5rem;
     text-align: center;
-    color: #008080;
+    color: var(--teal);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 692px) {
     body {
         padding: 0;
     }
@@ -229,11 +230,16 @@ footer li {
         clear: left;
     }
     #about-container {
-        padding-top: 20rem;
         flex-direction: column;
         align-items: center;
     }
 
+    .card {
+        width: 30rem;
+    }
+}
+
+@media screen and (max-width: 866px) {
     .card {
         width: 30rem;
     }

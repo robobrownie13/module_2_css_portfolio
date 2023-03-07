@@ -7,5 +7,7 @@ AS AN employer <br>
 I WANT to view a potential employee's deployed portfolio of work samples <br>
 SO THAT I can review samples of their work and assess whether they're a good candidate for an open position <br>
 
+## Features
+Primarily, I've included extensive work with Flexbox, Media Queries and CSS styling to highlight my projects thus far. 
 ## Mock-Up
-<img src="./Assets/02-advanced-css-homework-demo.gif" alt="mock-up demo of portfolio page">
+<img src="./Assets/mock-up.png" alt="demo of portfolio page">
