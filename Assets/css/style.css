@@ -156,8 +156,8 @@ p {
 }
 
 .main-card {
-width: 50vw;
-background-image: url(../images/technical-page-Song-Screenshot.png);
+    width: 50vw;
+    background-image: url(../images/technical-page-Song-Screenshot.png);
 }
 
 .project {
@@ -231,10 +231,11 @@ footer li {
     #about-container {
         padding-top: 20rem;
         flex-direction: column;
-        justify-content: center;
+        align-items: center;
     }
-    .main-card {
-        width: 80vw;
+
+    .card {
+        width: 30rem;
     }
 }
 
