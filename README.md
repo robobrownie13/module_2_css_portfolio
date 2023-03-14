@@ -11,3 +11,5 @@ SO THAT I can review samples of their work and assess whether they're a good can
 Primarily, I've included extensive work with Flexbox, Media Queries and CSS styling to highlight my projects thus far. 
 ## Mock-Up
 <img src="./Assets/mock-up.png" alt="demo of portfolio page">
+<br>
+Deployed Project: https://robobrownie13.github.io/module_2_css_portfolio/
